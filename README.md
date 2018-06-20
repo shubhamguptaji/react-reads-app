@@ -9,5 +9,5 @@
 
 # Steps to use
  - clone or download the project as zip file.
- - Then by cd to the folder in which the files are stored in cmd line run [npm install]
+ - Then by cd to the folder in which the files are stored in cmd line run [ npm install ]
  - To run the app run npm start
