@@ -25,8 +25,10 @@ class SearchBooks extends Component {
 					if(!("authors" in book)) {
 						book["authors"] = ["unknown"];
 					}
-					if(!("thumbnails) in book)) {
-					     book.imageLinks.thumbnail = "https://www.google.co.in/imgres?imgurl=https%3A%2F%2Fi.gadgets360cdn.com%2Flarge%2Fpdf_pixabay_1493877090501.jpg%3Foutput-quality%3D80&imgrefurl=https%3A%2F%2Fgadgets.ndtv.com%2Fapps%2Ffeatures%2Fcompress-pdf-free-reduce-size-how-to-1689372&docid=YmOUXE6P4BpZqM&tbnid=bJw8CGeWJ00RTM%3A&vet=10ahUKEwjxy6Xp1OTbAhVJipQKHTsAAY8QMwhUKAAwAA..i&w=800&h=450&bih=759&biw=1536&q=pdf&ved=0ahUKEwjxy6Xp1OTbAhVJipQKHTsAAY8QMwhUKAAwAA&iact=mrc&uact=8"
+					if(!("imageLinks" in book)) {
+					     book["imageLinks"] = {
+						     thumbnail : "https://www.google.co.in/imgres?imgurl=https%3A%2F%2Fi.gadgets360cdn.com%2Flarge%2Fpdf_pixabay_1493877090501.jpg%3Foutput-quality%3D80&imgrefurl=https%3A%2F%2Fgadgets.ndtv.com%2Fapps%2Ffeatures%2Fcompress-pdf-free-reduce-size-how-to-1689372&docid=YmOUXE6P4BpZqM&tbnid=bJw8CGeWJ00RTM%3A&vet=10ahUKEwjxy6Xp1OTbAhVJipQKHTsAAY8QMwhUKAAwAA..i&w=800&h=450&bih=759&biw=1536&q=pdf&ved=0ahUKEwjxy6Xp1OTbAhVJipQKHTsAAY8QMwhUKAAwAA&iact=mrc&uact=8"
+					     	}
 					     }
 					return book;
 				})}).then(books => {this.setState({books})})
